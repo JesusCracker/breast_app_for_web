@@ -1,0 +1,263 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+.diagnosisList{
+  overflow: scroll;
+  height: 100%;
+  background:rgba(238,242,249,1);
+  .searchArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 8px 12px 0px rgba(0,0,0,0.05);
+    .one{
+      border-right: 1px solid rgba(238,242,249,1);
+    }
+    .half{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+      .font{
+        margin-left: 5px;
+        text-align: center;
+        .searchTitle{
+          font-size:@fontSizeNormal;
+          font-family:@ALLdefaultFontSemiFamily;
+          font-weight:600;
+          color:rgba(51,51,51,1);
+          letter-spacing: 1px;
+          margin-bottom: 5px;
+        }
+        .number{
+          font-size:@extremeSmallFontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:400;
+          color:rgba(165,165,165,1);
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+  .supportTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .other{
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      img{
+        width: 17px;
+        margin-right: 5px;
+      }
+      span{
+        font-size:@extremeSmallFontSize1;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:rgba(51,51,51,1);
+      }
+    }
+   .title{
+     font-size:@fontSizeNormal;
+     font-family:@ALLdefaultFontSemiFamily;
+     font-weight:600;
+     color:rgba(51,51,51,1);
+     padding: 15px 10px 15px 10px;
+   }
+
+  }
+  .docList{
+    //height: 100%;
+    //overflow: scroll;
+    .docTag{
+      background:rgba(255,255,255,1);
+      box-shadow:0px 7px 12px 0px rgba(0,0,0,0.1);
+      border-radius:10px;
+      width: 95%;
+      margin-left: 2.5%;
+      height:auto;
+      margin-bottom: 2.5%;
+      .leftCorner{
+        display: flex;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        .bgImg{
+          width: 50px;
+          position: absolute;
+        }
+        .score{
+          position: absolute;
+          font-size:@fontSizeNormal;
+          font-family:@ALLdefaultFontSemiFamily;
+          font-weight:600;
+          color:rgba(255,255,255,1);
+          left: 2px;
+          top: 3px
+        }
+        .recommend{
+          position: absolute;
+          top: 20px;
+          width: 15px;
+        }
+      }
+      .docResume{
+        display: flex;
+        position: relative;
+        margin-top: -25px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        .header{
+          img{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+          }
+          P{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            background:rgba(103,147,243,1);
+            border-radius:20px;
+            text-align: center;
+            font-size:@extremeSmallFontSize;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:@fontWeight;
+            color:rgba(255,255,255,1);
+            line-height: 20px;
+            height: 20px;
+            width: 60px;
+            top: 50px;
+            position: absolute;
+          }
+        }
+        .detail{
+          margin-left: 20px;
+          margin-right: 20px;
+         .first{
+           display: flex;
+           padding-bottom: 10px;
+           .title{
+             margin-right: 10px;
+             font-size:@fontSizeNormal;
+             font-family:@ALLdefaultFontMediumFamily;
+             font-weight:600;
+             color:rgba(0,0,0,1);
+
+           }
+         }
+          .second{
+            display: flex;
+            padding-bottom: 10px;
+            width: 19em;
+            .title{
+              margin-right: 10px;
+              font-size:@smallFontSize;
+              font-family:@ALLdefaultFontMediumFamily;
+              font-weight:400;
+              color:rgba(0,0,0,1);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              word-break: keep-all;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: block;
+              width: 10em;
+            }
+          }
+          .third{
+            padding-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            font-size:@smallFontSize;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:@fontWeight;
+            color:rgba(153,153,153,1);
+
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            width: 17em;
+          }
+          .forth{
+            display: flex;
+            align-items: center;
+            img{
+              width: 15px;
+              margin-right: 1px;
+              height: 15px;
+            }
+            div{
+              margin-left: 3px;
+              font-size:@extremeSmallFontSize;
+              font-family:@ALLdefaultFontRegularFamily;
+              font-weight:@fontWeight;
+              color:rgba(51,51,51,1);
+            }
+            .one{
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+            }
+            .slash{
+              border-right: 1px solid;
+              margin-left: 5px;
+              margin-right: 2px;
+            }
+          }
+        }
+      }
+      .docOther{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-top: 1px solid rgba(229,236,247,1);
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 10px;
+        padding-bottom: 10px;
+        .one{
+          font-size:@fontSizeNormal;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(51,51,51,1);
+          .price{
+            color: #CC1818;
+          }
+        }
+      }
+    }
+  }
+
+}

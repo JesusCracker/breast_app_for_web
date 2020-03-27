@@ -1,0 +1,69 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+
+.wikiSearchList{
+ .am-navbar-left, .livelisttitlebox .am-navbar-right {
+    flex: inherit;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .historyRecorder{
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 10px 10px;
+    .cnm{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title{
+        font-size: @fontSizeNormal;
+        font-family: @ALLdefaultFontMediumFamily;
+        font-weight: bold;
+        color: #333333;
+        padding-right: 15px;
+        line-height: initial;
+        word-wrap: break-word;
+        display: block;
+        white-space: normal;
+        margin-bottom: 10px;
+      }
+      .icon{
+        width: 30px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .historyCollection{
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-wrap: wrap;
+      .item{
+        border: 1px solid #e6eeff;
+        padding: 5px;
+        margin: 5px;
+      }
+      .noneRecorder{
+        width: 100%;
+        margin-left: 40%;
+      }
+    }
+  }
+
+
+}

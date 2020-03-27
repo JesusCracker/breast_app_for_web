@@ -1,0 +1,459 @@
+//全局样式
+@ALLdefaultFontRegularFamily:PingFangSC-Regular,PingFang SC;
+@ALLdefaultFontMediumFamily:PingFangSC-Medium,PingFang SC;
+@ALLdefaultFontSemiFamily:PingFangSC-Semibold,PingFang SC;
+
+
+@fontColor:rgba(165,165,165,1);
+@fontWeight:400;
+@fontSize:15px;
+@smallFontSize:14px;
+
+//直播中左上角图表
+@livingImageIcon:'../images/play_dt_bg.png';
+
+//搜索框的样式
+@searchInputRadius:50px;
+
+//Navbar样式
+@tabActiveFontSize:15px;
+@tabDefaultFont:PingFangSC-Medium,PingFangSC;
+@tabActiveFontWeight:400;
+@tabActiveBGC:#EEF2F9;
+@setSecondNavbarHeight:70px;
+
+@nice-blue: #5B83AD;
+@light-blue: @nice-blue + #111;
+
+//第二层navbar图表和文字
+
+
+
+//列表左侧区域
+@defaultImageWidth:140px;
+@defaultImageHeight:100px;
+@imageRadius:10px 10px 0 0;
+
+
+.focusListStyle{
+  width: 93%;
+  margin: 0 3.5%;
+  margin-bottom: 3.5%;
+  border-radius: 10px;
+}
+.focusTitle{
+  border-radius: 10px;
+}
+
+.am-tabs-default-bar-tab-active{
+  font-weight: bold;
+}
+.am-tabs-default-bar-tab{
+  height: 31.5px;
+
+}
+//全局设置
+.setImageTags(hasImageIcon){
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+.setImageTags(hasNotImageIcon,@background-color:rgba(249, 189, 60, 1)){
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 3px 3px 0;
+  background-color: @background-color;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  border-radius: 5px 0 13px 0;
+  align-items: center;
+  justify-content: center;
+  //height: 25%;
+  //width: 40%;
+}
+
+//关注列表标签设置
+.setFocusTagInner(@background-color){
+  background: @background-color;
+  box-shadow: 0px 2px 4px 0px rgba(141, 139, 139, 0.3);
+  border-radius: 5px;
+  height: 32%;
+  display: flex;
+  align-items: center;
+  img{
+    padding-left: 3px;
+  }
+  span{
+    padding: 3px;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:rgba(255,255,255,1);
+  }
+}
+
+.setFocusTags(hasImage,@background-color){
+  .setFocusTagInner(@background-color)
+}
+
+
+.setFocusTags(hasNotImage,@background-color:'#A5A5A5'){
+  background: @background-color;
+  box-shadow: 0px 2px 4px 0px rgba(141, 139, 139, 0.3);
+  border-radius: 5px;
+  height: 32%;
+  display: flex;
+  align-items: center;
+  span{
+    padding: 3px;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:rgba(255,255,255,1);
+  }
+}
+
+
+.setListImageArea{
+  border-radius: 5px;
+  position: relative;
+  width: @defaultImageWidth;
+  height: @defaultImageHeight;
+  margin-right: 10px;
+  text-align:center;
+  .setImage{
+    height: @defaultImageHeight*0.75;
+    width: @defaultImageWidth;
+    border-radius:@imageRadius;
+    display: block;
+    object-fit: cover;
+  }
+  .setImage1{
+    height: @defaultImageHeight*0.9;
+    width: @defaultImageWidth;
+    border-radius:10px ;
+    display: block;
+    object-fit: cover;
+  }
+  .isAudios{
+    width:100%;
+    height:72%;
+    background:linear-gradient(342deg,rgba(108,143,252,1) 0%,rgba(133,205,253,1) 100%);
+    position: relative;
+    .disk{
+      width: 100%;
+      height: 100%;
+      object-fit:contain;
+      padding: 5px 0px;
+      position: absolute;
+      left: 0;
+    }
+    .pointer{
+      width: 100%;
+      height: 85%;
+      object-fit: contain;
+      padding: 5px 0px;
+      position: absolute;
+      left: 30%;
+      bottom: 23%;
+    }
+  }
+
+  //设置报名人数的样式
+  .registerNumber{
+    font-family: @ALLdefaultFontRegularFamily;
+    font-weight: @fontWeight;
+    color: @fontColor;
+    background-color:rgba(238,242,249,1);
+    position: relative;
+    width: @defaultImageWidth;
+    height: @defaultImageHeight*0.25;
+    margin-right: 10px;
+    line-height: @defaultImageHeight*0.25;
+    box-shadow: 0 7px 15px #d8d8d8;
+  }
+  //设置图片左上角标签状态
+  //直播中
+  .setImageTagsBGCLiving{
+    .setImageTags(hasImageIcon);
+    img{
+      background-color:#CC1818;
+      border-radius: 10px 3px 15px 0;
+      width: 28px;
+    }
+  }
+  //待直播
+  .setImageTagsBGCWaiting{
+    .setImageTags(hasNotImageIcon,rgba(249, 189, 60, 1));
+  }
+
+  //已结束状态
+  .setImageTagsBGCDone{
+    .setImageTags(hasNotImageIcon,rgba(169, 171, 175, 1))
+  }
+
+  //视频类型的时候封面图片按钮样式
+  .videoMarker{
+    position: absolute;
+    z-index: 99999;
+    left: 37%;
+    top: 25%;
+    width: 25%;
+  }
+}
+
+//设置右侧文字部分的属性&样式
+.setListRightArea{
+  .setListRightAreaTitle{
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-size: @fontSize;
+    font-family: @ALLdefaultFontMediumFamily;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-weight: bold;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    color: rgba(49,50,51,1);
+    height: auto;
+    line-height: 20px;
+    word-break: break-all;
+  }
+
+  .timeRemaining{
+    margin-bottom: 10px;
+    font-size: @smallFontSize;
+    font-family: @ALLdefaultFontRegularFamily;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: rgba(153,153,153,1);
+  }
+  .setPriceStyle{
+    font-family:@ALLdefaultFontSemiFamily;
+    font-weight:600;
+    color:rgba(204,24,24,1);
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+  }
+  .setFreeStyle{
+    color: rgba(51,51,51,1);
+    font-weight:600;
+    font-family:@ALLdefaultFontSemiFamily;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+  }
+  .setDoneReportStyle{
+    font-family:@ALLdefaultFontSemiFamily;
+    font-weight: @fontWeight;
+    color: rgba(61,126,255,1);;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+    background:rgba(61,126,255,0.1);
+    border-radius:2px;
+    text-align: center;
+    display: inline-block;
+  }
+  .setDoneStyle{
+    font-family:@ALLdefaultFontSemiFamily;
+    font-weight: @fontWeight;
+    color: #333333;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0;
+    background:rgba(165,165,165,0.1);
+    border-radius:2px;
+    text-align: center;
+    display: inline-block;
+  }
+  .supportArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .supportNumber{
+      font-size:13px;
+      font-family:@ALLdefaultFontRegularFamily;
+      font-weight:@fontWeight;
+      color:#999999;
+      margin-right: 3px;
+      width: max-content;
+    }
+    img{
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+}
+
+//关注后的样式
+.focusArea{
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  height: 65px;
+  img{
+    height:50px;
+    border-radius: 50%;
+    //width: 48px;
+    width: 51px;
+  }
+  .focusDesc{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    img{
+      width: 6%;
+      height: 30%;
+    }
+  }
+  .focusStatus{
+    margin-left: auto;
+    margin-right: 5%;
+  }
+  .focusStatusLiving{
+    .setFocusTags(hasImage,#CC1818);
+  }
+/*  .focusImageSize{
+    width: 17px;
+  }*/
+
+  .focusStatusReport{
+    .setFocusTags(hasImage,linear-gradient(180deg,rgba(249,207,111,1) 0%,rgba(253,175,67,1) 100%));
+  }
+  .focusStatusDone{
+   .setFocusTags(hasNotImage,#A5A5A5);
+  }
+
+  .focusName{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:bold;
+    color:rgba(51,51,51,1);
+    width: 44px;
+  }
+  .focusClient{
+
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:#999999;
+
+  }
+  .focusClient1{
+    width: 110px;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:#999999;
+
+  }
+}
+
+
+
+.tabActive(...){
+  font-size: @tabActiveFontSize;
+  font-family:@tabDefaultFont;
+  font-weight:@tabActiveFontWeight;
+  background-color: @tabActiveBGC;
+}
+
+input {
+  &::placeholder {
+    // 自定义样式
+    font-size: @smallFontSize;
+    color: @nice-blue;
+  }
+}
+
+//设置搜索框的样式
+.setInputStyle{
+ .am-list-item.am-input-item{
+    border-radius: @searchInputRadius;
+  }
+  .am-tabs-default-bar-top .am-tabs-default-bar-tab{
+    border-bottom: none;
+  }
+  .am-list-item .am-input-control input{
+    padding: 5px 0;
+  }
+  .am-list-item.am-input-item{}
+}
+
+
+//设置第二级navbar点击时的样式
+.setFontSize {
+  .am-tabs-default-bar-tab-active{
+    .tabActive();
+    color:#333333;
+  }
+  .am-navbar{
+    height: 90px;
+  }
+  .am-tabs-default-bar-tab{
+    padding: 30px 0;
+  }
+}
+
+
+//设置第二级navbar的高度
+.secondNavbar{
+  .am-navbar{
+    height: @setSecondNavbarHeight;
+    margin-bottom: 15px;
+  }
+  .secondNavbarStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    img{
+      width:30px;
+      height:30px;
+    }
+    .secondNavbarFont{
+      width: 100%;
+      line-height: initial;
+      text-align: center;
+      font-size: @fontSize;
+      font-family: @ALLdefaultFontRegularFamily;
+    }
+  }
+
+}

@@ -1,0 +1,93 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@superSize:24px;
+@extraFontSize: 19px;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal: 15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1: 13.5px;
+@extremeSmallFontSize: 13px;
+
+.loginIn{
+  height: 100%;
+  background: #fff;
+  position: relative;
+  .items{
+    .am-list-item:not(:last-child) .am-list-line{
+      border-bottom: none;
+    }
+    .title{
+      font-size:@superSize;
+      font-family:@ALLdefaultFontRegularFamily;
+      font-weight:500;
+      color:rgba(37,41,46,1);
+      margin-bottom: 30px;
+    }
+    .phoneNum{
+      .am-list-line{
+        .am-input-control{
+          input{
+            padding-right: 85px;
+          }
+        }
+      }
+    }
+    .am-list-line::after{
+      height: 0px!important;
+    }
+    .am-list-item.am-input-item{
+      padding-left: 0;
+    }
+    .am-list-item .am-input-control input{
+      background: rgba(248,249,252,1);
+      border-radius: 40px;
+      height: 45px;
+      text-align: center;
+    }
+    .am-list-item .am-list-line{
+      padding-right: 0;
+    }
+   .sec{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 40px;
+     .am-list-item.am-input-item.am-list-item-middle.checkCode{
+       width: 60%;
+     }
+     .sendMsg{
+       width: 40%;
+       border-radius: 50px;
+       font-family:@ALLdefaultFontRegularFamily;
+       font-weight:500;
+       color:rgba(255,255,255,1);
+       font-size: @smallFontSize;
+       padding: 5px 10px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-left: 10px;
+     }
+   }
+    .third{
+      width: 100%;
+      margin-top: 30px;
+      .signIn{
+        border-radius: 50px;
+      }
+    }
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    padding: 10%;
+  }
+}

@@ -1,0 +1,68 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+.hospitalList{
+  .chooseBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .list{
+    .inner{
+      padding: 10px;
+      background:rgba(255,255,255,1);
+      //box-shadow:0px 8px 12px 0px rgba(0,0,0,0.05);
+      border-radius:10px;
+      display: flex;
+      align-items: center;
+      .leftArea{
+        img{
+          width: 60px;
+          height: 50px;
+        }
+        margin-right: 10px;
+      }
+      .rightArea{
+        .hospitalName{
+          font-size:@fontSizeNormal;
+          font-family:@ALLdefaultFontSemiFamily;
+          font-weight:bold;
+          color:rgba(51,51,51,1);
+          margin-bottom: 10px;
+        }
+        .hospitalClass{
+          display: flex;
+          align-items: center;
+          font-size:@extremeSmallFontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(51,51,51,1);
+          .grade{
+            color:rgba(103,147,243,1);
+            margin-right: 10px;
+          }
+          .type{
+
+          }
+        }
+      }
+    }
+  }
+}

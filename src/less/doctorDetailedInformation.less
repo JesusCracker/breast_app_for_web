@@ -1,0 +1,394 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+html:not([data-scale]) .am-tag-normal::before{
+  border:none;
+}
+html:not([data-scale]) .am-tag-active::before{
+  border:none;
+}
+
+.am-tag-normal {
+  font-size:@smallFontSize*1.03;
+  font-family:@ALLdefaultFontRegularFamily;
+  font-weight:@fontWeight;
+  color:rgba(51,51,51,1);
+  background-color: rgba(247,247,247,1);;
+  border-radius: 50px;
+}
+
+.am-tag-active {
+  font-size:@smallFontSize*1.03;
+  font-family:@ALLdefaultFontRegularFamily;
+  font-weight:@fontWeight;
+  color:rgba(103,147,243,1);
+  background-color:rgba(230,238,255,1);
+  border-radius: 50px;
+}
+
+.doctorDetailedInformation{
+  .shows{
+    display: flex!important;
+  }
+  .hides {
+    display: -webkit-box!important;
+  }
+  height: 100%;
+  .container{
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    margin-top: 0px;
+    .resume{
+      margin-top: 0;
+      background-image: url("../images/main.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 30.5%;
+      .docTag{
+        position: absolute;
+        top: 35px;
+        //background:rgba(255,255,255,1);
+        //box-shadow:0px 7px 12px 0px rgba(0,0,0,0.1);
+        border-radius:10px;
+        width: 100%;
+        height:auto;
+
+        .leftCorner{
+          display: flex;
+          position: relative;
+          height: 50px;
+          width: 50px;
+          .bgImg{
+            width: 50px;
+            position: absolute;
+          }
+          .score{
+            position: absolute;
+            font-size:@fontSizeNormal;
+            font-family:@ALLdefaultFontSemiFamily;
+            font-weight:600;
+            color:rgba(255,255,255,1);
+            left: 2px;
+            top: 3px
+          }
+          .recommend{
+            position: absolute;
+            top: 20px;
+            width: 15px;
+          }
+        }
+        .docResume{
+          display: flex;
+          position: relative;
+
+          margin-left: 20px;
+          //margin-bottom: 10px;
+          .header{
+            img{
+              width: 60px;
+              height: 60px;
+              border-radius: 30px;
+            }
+            P{
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              background:rgba(103,147,243,1);
+              border-radius:20px;
+              text-align: center;
+              font-size:@extremeSmallFontSize;
+              font-family:@ALLdefaultFontRegularFamily;
+              font-weight:@fontWeight;
+              color:rgba(255,255,255,1);
+              line-height: 20px;
+              height: 20px;
+              width: 60px;
+              top: 50px;
+              position: absolute;
+            }
+          }
+          .detail{
+            margin-left: 20px;
+            margin-right: 10px;
+            .first{
+              margin-bottom: 15px;
+              display: flex;
+              align-items: center;
+              .title{
+                margin-right: 10px;
+                font-size:@fontSizeNormal;
+                font-family:@ALLdefaultFontMediumFamily;
+                font-weight:600;
+                color:rgba(0,0,0,1);
+              }
+              .name{
+                font-size: @fontSize!important;
+              }
+            }
+            .second{
+              display: flex;
+              margin-bottom: 10px;
+              .title{
+                margin-right: 10px;
+                font-size:@smallFontSize;
+                font-family:@ALLdefaultFontMediumFamily;
+                font-weight:400;
+                color:rgba(0,0,0,1);
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+              }
+            }
+            .third{
+              margin-bottom: 10px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              font-size:@smallFontSize;
+              font-family:@ALLdefaultFontRegularFamily;
+              font-weight:@fontWeight;
+              color:rgba(153,153,153,1);
+            }
+            .forth{
+              display: flex;
+              img{
+                width: 15px;
+                margin-right: 1px;
+                height: 15px;
+              }
+              div{
+                margin-left: 3px;
+                font-size:@extremeSmallFontSize;
+                font-family:@ALLdefaultFontRegularFamily;
+                font-weight:@fontWeight;
+                color:rgba(51,51,51,1);
+              }
+              .one{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+              }
+              .slash{
+                border-right: 1px solid;
+                margin-left: 5px;
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+        .docOther{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 50px;
+          padding-right: 50px;
+          //padding-top: 10px;
+          .one{
+            font-size:@fontSizeNormal;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:@fontWeight;
+            color:rgba(51,51,51,1);
+            text-align: center;
+            .first{
+              font-family:@ALLdefaultFontSemiFamily;
+              font-weight:600;
+              color:rgba(51,51,51,1);
+              line-height:@fontSizeNormal*1.5
+            }
+            .percent{
+              color: #F7B500;
+            }
+          }
+        }
+      }
+    }
+    .about{
+      background: #ffffff;
+      //height: 15%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      padding-top: 3%;
+      .onePart{
+        background: #ffffff;
+        border-radius: 4px;
+        text-align: center;
+        box-shadow: 0px 7px 12px 1px rgba(191, 191, 191, 0.34);
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        img{
+          width: 25px;
+          height: 25px;
+          margin-bottom: 5px;
+        }
+        .name{
+          font-size:@smallFontSize*1.03;
+          font-family:@ALLdefaultFontSemiFamily;
+          font-weight:bold;
+          color:rgba(51,51,51,1);
+          margin-bottom: 10px;
+        }
+        .detail{
+          font-size:@extremeSmallFontSize1;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(204,24,24,1);
+          margin-bottom: 5px;
+        }
+        .closeFontColor{
+          color:rgba(165,165,165,1);
+        }
+      }
+      .closePart{
+        background:rgba(246,246,246,1);
+      }
+    }
+
+    .mb{
+      margin-bottom: 10px;
+    }
+    .goodAt{
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      margin-top: 10px;
+      background: #FFFFFF;
+      height: auto;
+      .intro{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+        .title{
+          font-size:@fontSizeSu;
+          font-family:@ALLdefaultFontSemiFamily;
+          font-weight:bold;
+          color:rgba(51,51,51,1);
+        }
+      }
+      .inner{
+        font-size:@smallFontSize*1.03;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:rgba(102,102,102,1);
+        line-height:@smallFontSize*1.3;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        .threeLines{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+        .goodAtMore{
+
+        }
+      }
+
+    }
+    .comments{
+      height:auto;
+      .all{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 5px;
+        font-size:@smallFontSize*1.03;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:rgba(102,102,102,1);
+      }
+      .commentTags{
+        display: flex;
+        padding-bottom: 14px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        div{
+          margin: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .commentList{
+        background:rgba(255,255,255,1);
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        //margin-bottom: 50px;
+        .comment{
+          padding-bottom: 15px;
+          height: auto;
+          .first{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            div{
+              font-size:@smallFontSize*1.03;
+              font-family:@ALLdefaultFontRegularFamily;
+              font-weight:@fontWeight;
+              color:rgba(165,165,165,1);
+            }
+            .left{
+              display: flex;
+              align-items: center;
+              img{
+                margin-right: 10px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50px;
+              }
+
+            }
+          }
+          .second{
+            font-size:@smallFontSize*1.03;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:@fontWeight;
+            color:rgba(51,51,51,1);
+            word-break: break-all;
+          }
+        }
+      }
+    }
+
+  }
+}

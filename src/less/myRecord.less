@@ -1,0 +1,151 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+.myRecord{
+  .totalCourseNum{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:@extremeSmallFontSize;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:rgba(165,165,165,1);
+  }
+  .line{
+    display: flex;
+
+    .left{
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    }
+    .right{
+      .first{
+        display: flex;
+        align-items: center;
+
+        .docName{
+          font-size:@fontSize;
+          font-family:@ALLdefaultFontSemiFamily;
+          font-weight:700;
+          color:rgba(51,51,51,1);
+        }
+        .type{
+          background:rgba(230,238,255,1);
+          border-radius:3px;
+          font-size:@extremeSmallFontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(103,147,243,1);
+          padding:3px 5px;
+          margin-left: 15px;
+        }
+        .date{
+          font-size:@extremeSmallFontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(165,165,165,1);
+          position: absolute;
+          right: 20px;
+        }
+      }
+      .second{
+        font-size:@extremeSmallFontSize1;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:rgba(51,51,51,1);
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        .hospital{
+
+        }
+        .department{
+          margin-left: 10px;
+        }
+      }
+      .third{
+        font-size:@extremeSmallFontSize1;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:rgba(51,51,51,1);
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .sufferInfo{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p{
+            margin-right: 10px;
+          }
+        }
+        .waiting{
+          position: absolute;
+          right: 20px;
+          background: #f7b500;
+          box-shadow: 0px 2px 4px 0px rgba(141, 139, 139, 0.3);
+          border-radius: 8px;
+          height: 32px;
+          width: 75px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(255,255,255,1);
+        }
+        .processing{
+          position: absolute;
+          right: 20px;
+          background:rgba(204,24,24,1);
+          box-shadow: 0px 2px 4px 0px rgba(141, 139, 139, 0.3);
+          border-radius: 8px;
+          height: 32px;
+          width: 75px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(255,255,255,1);
+        }
+        .done{
+          position: absolute;
+          right: 20px;
+          background:#A5A5A5;
+          box-shadow: 0px 2px 4px 0px rgba(141, 139, 139, 0.3);
+          border-radius: 8px;
+          height: 32px;
+          width: 75px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(255,255,255,1);
+        }
+      }
+    }
+  }
+}

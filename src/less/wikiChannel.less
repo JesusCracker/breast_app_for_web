@@ -1,0 +1,77 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+.am-tag-active {
+  position: relative;
+  border: none;
+  width: 28%;
+  padding: 0;
+  margin: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wikiChannel{
+  height: 100%;
+  .allChannel{
+    font-size:@fontSize;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:rgba(51,51,51,1);
+    padding: 10px;
+    border-bottom: 1px solid rgba(153,153,153,0.2);
+  }
+  .channels{
+    .defaultChannel{
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        width: 33%;
+        text-align: center;
+        color:rgba(61,126,255,1);
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        font-size: @fontSizeNormal;
+      }
+    }
+    .channelTages{
+
+      padding-top: 9px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 100%;
+      .am-tag.am-tag-normal{
+        width: 28%;
+        padding: 0;
+        margin: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .am-tag-text{
+
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,103 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+
+.wikiList{
+ .am-navbar-left, .livelisttitlebox .am-navbar-right {
+    flex: inherit;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+
+  }
+  .typeArea{
+    background:rgba(255,255,255,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .line{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+      .one{
+        width: 33%;
+        text-align: center;
+
+        img{
+          width: 50%;
+          padding: 10px 10px 0 10px;
+        }
+        p{
+          font-size:@fontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:400;
+          color:rgba(37,41,46,1);
+        }
+        .normal{
+          color:rgba(37,41,46,1);
+        }
+        .active{
+          color: #2E86FE;
+        }
+      }
+    }
+    .seconds{
+      padding-top: 10px;
+    }
+  }
+
+  .typeArea1{
+    overflow: scroll;
+    background:rgba(255,255,255,1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    .line{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      padding-left: 5px;
+      padding-right: 10px;
+      .one{
+        width: 33%;
+        text-align: center;
+        margin-right: 2%;
+        margin-left: 2%;
+        img{
+          width: 60px;
+          padding: 10px 10px 0 10px;
+        }
+        p{
+          font-size:@extremeSmallFontSize1;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:400;
+          color:rgba(37,41,46,1);
+        }
+        .normal{
+          color:rgba(37,41,46,1);
+        }
+        .active{
+          color: #2E86FE;
+        }
+      }
+    }
+    .seconds{
+      padding-top: 10px;
+    }
+  }
+}

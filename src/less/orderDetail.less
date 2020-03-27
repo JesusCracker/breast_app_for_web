@@ -1,0 +1,172 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+.am-modal-transparent .am-modal-content {
+  border-radius: 7px;
+  padding-top: 15px;
+}
+.am-modal-header {
+  padding: 6px 15px 15px;
+  background:#fff;
+}
+
+.orderDetail{
+
+
+  .one{
+    background: #f9fafb;
+    padding: 10px;
+    padding-top: 20px;
+    .first{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .icon{
+    /*    width: 120px;
+        height: 90px;*/
+
+        margin-left: 10px;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .others{
+        display: flex;
+        line-height: 18px;
+/*        align-items: flex-start;
+        justify-content: space-between;*/
+        margin: 0 10px;
+        .left{
+          width: 100%;
+          padding-right: 15px;
+          .title{
+            font-size: @smallFontSize;
+            font-family:@ALLdefaultFontMediumFamily;
+            font-weight:500;
+            color:rgba(48,49,51,1);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient: vertical;
+            margin-bottom: 15px;
+            width: 160px;
+            text-indent: -6px;
+            //line-height: 20px;
+          }
+          .sufferInfo{
+            font-size:@extremeSmallFontSize;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:500;
+            color:rgba(157,157,157,1);
+            margin-bottom: 15px;
+          }
+          .price{
+            font-size: @smallFontSize;
+            font-family:@ALLdefaultFontMediumFamily;
+            font-weight:500;
+            color:rgba(48,49,51,1);
+            margin-bottom: 30px;
+          }
+        }
+        .right{
+          font-size: @smallFontSize;
+          font-family:@ALLdefaultFontMediumFamily;
+          font-weight:500;
+          text-align: right;
+          width: 100%;
+          //margin-left: 10px;
+          span.payed{
+            color:rgba(61,126,255,1);
+          }
+          span.notPay{
+            color:rgba(249,113,60,1);
+          }
+          span.cancel{
+            color:rgba(48,49,51,1);
+          }
+          .number{
+            margin-top: 10px;
+            font-size:@extremeSmallFontSize;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:500;
+            color:rgba(157,157,157,1);
+            line-height: 25px;
+          }
+        }
+
+      }
+    }
+    .second{
+      height: 20px;
+      background: #f9fafb;
+      text-align: right;
+     div.btns{
+       float: right;
+       margin-left: 10px;
+       padding: 3px 7px;
+       border:1px solid rgba(157,157,157,1);
+       border-radius:25px;
+       font-family:@ALLdefaultFontMediumFamily;
+       font-weight:500;
+       color:rgba(48,49,51,1);
+     }
+      div.blue{
+        border:1px solid rgba(61,126,255,1);
+        color:rgba(61,126,255,1);
+      }
+      div.orange{
+        border:1px solid rgba(249,113,60,1);
+        background:rgba(249,113,60,1);
+        color: #ffffff;
+      }
+    }
+  }
+  .two{
+    margin-top: 10px;
+    background: #f9fafb;
+    height: 100%;
+    padding: 10px;
+    .slash{
+      border-bottom: 2px solid rgba(247,247,247,1);
+      padding-bottom: 15px;
+    }
+    .line{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: @smallFontSize;
+      font-family:@ALLdefaultFontMediumFamily;
+      font-weight:400;
+      color:rgba(157,157,157,1);
+      margin:15px 0;
+      .name{
+
+      }
+      .totalTitle{
+        color:rgba(48,49,51,1);
+        font-weight: bold;
+      }
+      .price{
+        color:rgba(249,113,60,1);
+        font-weight: bold;
+
+      }
+
+    }
+  }
+
+}

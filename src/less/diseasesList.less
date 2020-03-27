@@ -1,0 +1,117 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+.am-grid.am-grid-line .am-flexbox::after{
+  height: 0!important;
+}
+.am-grid.am-grid-line .am-flexbox .am-flexbox-item:not(:last-child)::after{
+  width: 0!important;
+}
+.am-grid.am-grid-line .am-flexbox .am-flexbox-item:first-child::before{
+  width: 0!important;
+}
+.am-grid.am-grid-line:not(.am-grid-carousel)::before{
+  height: 0!important;
+}
+.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content {
+  padding: 10px 0;
+}
+
+.diseasesList{
+  background:rgba(255,255,255,1);
+  height: 100%;
+  overflow: hidden;
+  .image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .title{
+      position: absolute;
+      top: 15px;
+      font-size:17px;
+      font-family:@ALLdefaultFontSemiFamily;
+      font-weight:600;
+      color:rgba(51,51,51,1);
+    }
+    .content{
+      position: absolute;
+      top: 45px;
+      font-size:13px;
+      font-family:@ALLdefaultFontRegularFamily;
+      font-weight:400;
+      color:rgba(165,165,165,1);
+    }
+    img{
+      width: 80%;
+    }
+  }
+  .diseasesBtns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    margin-top: 30px;
+    .diseasesBtnActive{
+      height: 100%;
+      line-height: 35px;
+      width: 25%;
+      margin: 0 20px;
+      background:linear-gradient(223deg,rgba(103,147,243,1) 0%,rgba(137,174,255,1) 100%,rgba(32,106,242,1) 100%);
+      border-radius:5px;
+      font-size:@smallFontSize;
+      letter-spacing:2px;
+      font-family:@ALLdefaultFontSemiFamily;
+      font-weight:600;
+      color:rgba(255,255,255,1);
+    }
+    .normalBtn{
+      border: none;
+      height: 100%;
+      line-height: 35px;
+      width: 25%;
+      margin: 0 20px;
+      border-radius:5px;
+      background:rgba(241,245,253,1);
+      font-size:@smallFontSize;
+      letter-spacing:2px;
+      font-family:@ALLdefaultFontSemiFamily;
+      font-weight:600;
+      color:rgba(51,51,51,1);
+    }
+  }
+  .contentList{
+    height: 100%;
+    overflow: scroll;
+    margin-top: 30px;
+    .am-grid.am-grid-square.am-grid-line {
+      margin-bottom: 200px;
+    }
+    .am-grid-text {
+      margin-top: 0!important;
+      font-size: 13px;
+      font-family:@ALLdefaultFontRegularFamily;
+      font-weight:@fontWeight;
+      color:rgba(51,51,51,1);
+    }
+    img.am-grid-icon{
+      margin-top: 0!important;
+    }
+    .hotFire{
+      width: 20px;
+      margin-right: 10px;
+    }
+
+  }
+}

@@ -1,0 +1,50 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+.entryRecord{
+  .setDoneReportStyle{
+    width: auto;
+    padding: 0 5px;
+  }
+
+  .am-tabs-default-bar-tab{
+    height: 43.5px;
+  }
+
+  .tabBar{
+    margin-bottom: 15px;
+  }
+  .ready{
+    font-size:@smallFontSize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /*限制在一个块元素显示的文本的行数*/
+    -webkit-box-orient: vertical;
+    color:rgba(102,102,102,1);
+    font-weight: @fontWeight;
+  }
+  .done{
+    font-size:@smallFontSize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /*限制在一个块元素显示的文本的行数*/
+    -webkit-box-orient: vertical;
+    color: rgba(102,102,102,1);
+    font-weight: @fontWeight;
+  }
+}

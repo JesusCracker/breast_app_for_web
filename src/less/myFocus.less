@@ -1,0 +1,198 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@extraFontSize: 19px;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal: 15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1: 13.5px;
+@extremeSmallFontSize: 13px;
+
+.myFocus{
+  .focusItem{
+    height: 240px;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    display: -webkit-flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    //justify-content: space-between;
+
+    .left{
+      position: absolute;
+      top: 10px;
+      left: -40px;
+      .menu{
+        .one{
+          border-radius: 0 10px 10px 0;
+          padding: 10px;
+          height:25px;
+          background:rgba(0,0,0,0.03);
+          font-size:@extremeSmallFontSize1;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(51,51,51,1);
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 5px;
+          .ball{
+            width: 5px;
+            height: 5px;
+            background-color: rgba(254,143,62,1);
+            border-radius: 50%;
+            margin-right: 5px;
+          }
+          .green{
+            background-color: rgba(0,202,171,1);
+          }
+          .title{
+            width: 30px;
+            margin-right: 5px;
+          }
+          .number{
+
+          }
+        }
+      }
+    }
+    .right{
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .left1{
+        text-align: center;
+        .headIcon{
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          margin-bottom: 5px;
+        }
+        .sepc{
+          .secArea{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            .name{
+              font-size:@fontSizeNormal;
+              font-family:@ALLdefaultFontMediumFamily;
+              font-weight:bold;
+              color:rgba(51,51,51,1);
+            }
+            .v{
+              width: 20px;
+              height: 20px;
+              margin: 0 3px;
+            }
+            .doctorTitle{
+              font-size:@fontSizeNormal;
+              font-family:@ALLdefaultFontRegularFamily;
+              font-weight:@fontWeight;
+              color:rgba(51,51,51,1);
+            }
+          }
+          .third{
+            margin-top: 5px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size:@smallFontSize;
+            font-family:@ALLdefaultFontRegularFamily;
+            font-weight:@fontWeight;
+            color:rgba(153,153,153,1);
+            .hospital{
+              margin-right: 4px;
+            }
+          }
+          .forthh{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+
+            .tagss{
+              margin-right: 5px;
+              border-radius:4px;
+              height: 20px;
+              line-height: 8px;
+              padding: 5px 10px;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              font-family:@ALLdefaultFontRegularFamily;
+              font-weight:@fontWeight;
+            }
+            .green{
+              background:rgba(227,244,244,1);
+              color:rgba(24,144,255,1);
+              border:1px solid rgba(133,220,220,1);
+            }
+            .orange{
+              background:rgba(250,242,227,1);
+              border:1px solid rgba(249,210,133,1);
+              color:rgba(250,177,32,1);
+            }
+            .blue{
+              background:rgba(227,239,251,1);
+              border:1px solid rgba(135,196,252,1);
+              color:rgba(19,194,194,1);
+            }
+            .default{
+              color:rgba(51,51,51,1);
+            }
+          }
+        }
+      }
+      .right1{
+        .focus{
+          position: absolute;
+          right: 24px;
+          top: 36px;
+          height: 30px;
+          line-height: 17px;
+          border: none;
+          padding: 5px;
+          box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.1);
+          border-top: 3px solid #6793f3;
+          font-size:@smallFontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(103,147,243,1);
+
+        }
+        .focus1{
+          background-color: rgba(103,147,243,1);
+          position: absolute;
+          right: 24px;
+          top: 73px;
+          height: 30px;
+          line-height: 0;
+          border: none;
+          padding:12px;
+          box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.1);
+          border-radius:5px;
+          border-top: 3px solid #6793f3;
+          font-size:@smallFontSize;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(255,255,255,1);
+        }
+      }
+
+    }
+
+  }
+}

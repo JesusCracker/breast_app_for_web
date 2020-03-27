@@ -1,0 +1,96 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@extraFontSize: 19px;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal: 15px;
+@smallFontSize: 14px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1: 13.5px;
+@extremeSmallFontSize: 13px;
+
+.feedBack{
+  height: 100%;
+  background: #ffffff;
+  .content{
+    padding: 10px;
+    .title{
+      display: flex;
+      align-items: center;
+      font-size:@fontSize;
+      font-family:@ALLdefaultFontRegularFamily;
+      font-weight:500;
+      color:rgba(68,68,68,1);
+      padding: 10px 10px 10px 0;
+      .title1{
+        margin-left: 5px;
+        font-size:@smallFontSize;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:500;
+        color:#999999;
+      }
+    }
+    .feedBackName{
+      width: 100%;
+      height: auto;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .piece{
+        margin: 5px;
+        width: 20%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #3D7EFF;
+        border-radius:25px;
+        font-size:@extremeSmallFontSize;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:500;
+        color:rgba(61,126,255,1);
+        background: #FFFFFF;
+      }
+      .active{
+        color:#FFFFFF;
+        background: rgba(61,126,255,1);
+      }
+    }
+    .innerContent{
+      border-top: 1px solid #EEEEEE;
+      margin-top: 20px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      .am-textarea-has-count{
+        background:rgba(245,245,245,1);
+        border-radius:4px;
+      }
+      .am-textarea-control textarea{
+        font-size: 15px;
+      }
+    }
+  }
+  .out{
+    position: absolute;
+    bottom: 0;
+    top: 10px;
+    margin-bottom: 15px;
+    left: 10%;
+    width: 80%;
+    background:rgba(61,126,255,1);
+    border-radius:40px;
+    font-size:@smallFontSize;
+    font-family:@ALLdefaultFontRegularFamily;
+    font-weight:@fontWeight;
+    color:rgba(255,255,255,1);
+
+  }
+}

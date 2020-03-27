@@ -1,0 +1,169 @@
+//全局样式
+@ALLdefaultFontRegularFamily: PingFangSC-Regular, PingFang SC;
+@ALLdefaultFontMediumFamily: PingFangSC-Medium, PingFang SC;
+@ALLdefaultFontSemiFamily: PingFangSC-Semibold, PingFang SC;
+
+
+@fontColor: rgba(165, 165, 165, 1);
+@fontWeight: 400;
+@fontSize: 17px;
+@fontSizeSu: 16px;
+@fontSizeNormal:15px;
+@smallFontSize: 14px;
+@extremeSmallFontSize1:13.5px;
+@extremeSmallFontSize:13px;
+
+html:not([data-scale]) .am-list-body::before{
+  height: 0;
+}
+.docCommentList{
+    height: 100%;
+    background: #EEF2F9;
+  .firsts{
+    margin-bottom: 4%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:rgba(255,255,255,1);
+    border-top: 1px solid rgba(218,221,221,1);
+    .part{
+      width: 33.333%;
+      text-align: center;
+      div{
+        font-size:@smallFontSize*1.03;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:#333333;
+      }
+      .rate{
+        font-size: @fontSizeNormal;
+        color: #F7B500;
+        font-family: @ALLdefaultFontSemiFamily;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .bd{
+        font-size: @fontSizeNormal;
+        font-family: @ALLdefaultFontSemiFamily;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .seconds{
+      margin-bottom: 4%;
+      background:rgba(255,255,255,1);
+      padding: 10px;
+      display: flex;
+      padding-bottom: 14px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      div{
+        margin: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+  .third{
+    padding-top: 20px;
+    background:rgba(255,255,255,1);
+    .comment{
+      box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.2);
+      padding: 10px;
+      background: #ffffff;
+      padding-bottom: 10px;
+      height: auto;
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 4%;
+      margin-top: 0.5%;
+      .first{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        div{
+          font-size:@smallFontSize*1.03;
+          font-family:@ALLdefaultFontRegularFamily;
+          font-weight:@fontWeight;
+          color:rgba(165,165,165,1);
+        }
+        .left{
+          display: flex;
+          align-items: center;
+          img{
+            margin-right: 10px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+          }
+
+        }
+      }
+      .second{
+        font-size:@smallFontSize*1.03;
+        font-family:@ALLdefaultFontRegularFamily;
+        font-weight:@fontWeight;
+        color:rgba(51,51,51,1);
+        word-break: break-all;
+      }
+      .trd{
+        .slash{
+          border-top: 1px solid rgba(238,242,249,1);
+          margin-top: 8px;
+          margin-bottom:8px;
+        }
+        .part2{
+
+          .one{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+           .apart{
+             display: flex;
+             align-items: center;
+             justify-content: left;
+             width: 50%;
+             .name{
+               font-size:@smallFontSize*1.03;
+               font-family:@ALLdefaultFontRegularFamily;
+               font-weight:@fontWeight;
+               color:rgba(165,165,165,1);
+               width: 39%;
+             }
+             .type{
+               background:rgba(230,238,255,1);
+               border-radius:8px;
+               color:rgba(103,147,243,1);
+               padding: 4px 8px;
+             }
+             .results{
+               color:rgba(51,51,51,1);
+               overflow: hidden;
+               text-overflow: ellipsis;
+               display: -webkit-box;
+               -webkit-line-clamp: 1;
+               -webkit-box-orient: vertical;
+               width: 100px;
+             }
+             .score{
+               img{
+                 width: 15px;
+               }
+             }
+           }
+          }
+        }
+
+      }
+
+    }
+    .list-view-section-body{
+      background: #ffffff;
+    }
+  }
+}
